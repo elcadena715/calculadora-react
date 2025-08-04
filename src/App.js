@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Display from './components/Display';
-import Keypad from './components/Keypad';
+import Display from './Display';
+import Keypad from './Keypad';
 import './App.css';
 
 function App() {
