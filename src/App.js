@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Display from './components/Display';
+import Keypad from './components/Keypad';
 import './App.css';
 
 function App() {
@@ -14,25 +16,22 @@ function App() {
 
   const calcularResultado = () => {
     try {
-      setInput(eval(input));
-    } catch (error) {
+      setInput(eval(input).toString());
+    } catch {
       setInput('Error');
     }
   };
 
   return (
-    <div className="calculadora">
-      <div className="display">{input || "0"}</div>
-      <div className="teclado">
-        {"123+456-789*0./".split('').map((val) => (
-          <button onClick={() => agregarInput(val)} key={val}>{val}</button>
-        ))}
-        <button onClick={limpiar}>C</button>
-        <button onClick={calcularResultado}>=</button>
+    <div className="contenedor">
+      <div className="calculadora">
+        <Display value={input} />
+        <Keypad onButtonClick={agregarInput} onClear={limpiar} onCalculate={calcularResultado} />
       </div>
     </div>
   );
 }
 
 export default App;
+
 
