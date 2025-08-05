@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  background: #00809D;
   display: flex;
   justify-content: center;
   padding: 40px;
@@ -8,7 +8,7 @@ body {
 
 .calculadora {
   width: 250px;
-  background: white;
+  background: #FCF8DD;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 2px 2px 15px rgba(0,0,0,0.2);
@@ -16,7 +16,7 @@ body {
 
 .display {
   background: #222;
-  color: #0f0;
+  color: #FFD700;
   font-size: 2em;
   text-align: right;
   padding: 10px;
@@ -35,13 +35,13 @@ button {
   padding: 20px;
   font-size: 1.2em;
   border: none;
-  background: #ccc;
+  background: #F8F3CE;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.2s;
 }
 
 button:hover {
-  background: #bbb;
+  background: #D3AF37;
 }
 
