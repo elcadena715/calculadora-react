@@ -2,7 +2,7 @@ import React from 'react';
 import Button from './Button';
 
 
-const teclas = ["1", "2", "3", "+", "4", "5", "6", "-", "7", "8", "9", "*", "0", ".", "/", "C", "="];
+const teclas = ["1", "2", "3", "C", "4", "5", "6", "+", "7", "8", "9", "-", "0", ".", "/", "X", "="];
 
 const Keypad = ({ onButtonClick, onClear, onCalculate }) => {
   return (
